@@ -1,0 +1,6 @@
+[book]
+authors = ["Nilstrieb"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Nilstrieb C Coding Style Edition 2"
