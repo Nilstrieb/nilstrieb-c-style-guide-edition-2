@@ -19,7 +19,7 @@ All identifiers should be given meaningful english names. To work with ancient l
 
 ## Comments
 
-Comments are vital to readability. Therefore, code should always be well comment. Comments must be written in the lingua franca of programming, swiss german.
+Comments are vital to readability. Therefore, code should always be well commented. Comments must be written in the lingua franca of programming, swiss german.
 
 ```c
 int main() {
