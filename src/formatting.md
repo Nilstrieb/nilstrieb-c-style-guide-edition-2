@@ -19,9 +19,9 @@ body cannot fit into a single line, make a new function instead.
    
    void foo() {
       if (true)
-          foo_if_body();
+         foo_if_body();
       else
-          printf("True was false!");
+         printf("True was false!");
    }
 ```
 
