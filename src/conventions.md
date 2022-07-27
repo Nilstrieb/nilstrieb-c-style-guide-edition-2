@@ -4,7 +4,7 @@ General conventions that C code should obey.
 
 ## Memory allocation
 
-Always check the return value of `malloc`. If it is a null pointer, dereference it to immediately abort the processas as we cannot reasonable recover from OOM in most cases. If such a recovery is possible, recover instead. On some platforms, dereferencing a null pointer does _not_ abort the process. In these cases, the null pointer is a perfectly fine pointer, and just continue using it instead. Note that this derefence should usually be a volatile operation as the compiler would optimize it away otherwise. I have reported upstream issues on compilers about this, but they have not yet answered.
+Always check the return value of `malloc`. If it is a null pointer, dereference it to immediately abort the processas as we cannot reasonably recover from OOM in most cases. If such a recovery is possible, recover instead. On some platforms, dereferencing a null pointer does _not_ abort the process. In these cases, the null pointer is a perfectly fine pointer, and just continue using it instead. Note that this derefence should usually be a volatile operation as the compiler would optimize it away otherwise. I have reported upstream issues on compilers about this, but they have not yet answered.
 
 If the pointer is non-null, `free` it directly after the `malloc` call. This prevents memory leaks of all sorts. Afterwards,
 you can use it freely in your program.
@@ -19,7 +19,7 @@ All identifiers should be given meaningful english names. To work with ancient l
 
 ## Comments
 
-Comments are vital to readability. Therefore, code should always be well commented. Comments must be written in the lingua franca of programming, swiss german.
+Comments are vital to readability. Therefore, code should always be well commented. Comments must be written in the lingua franca of programming, Swiss German.
 
 ```c
 int main() {
