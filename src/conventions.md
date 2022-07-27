@@ -12,3 +12,19 @@ you can use it freely in your program.
 ## Includes
 
 `#include` directives shall be placed at the start of the file. But usually, it's better to not use the preprocessor at all. Paste the code in by hand so that it is clearly visible in version control.
+
+## Identifers
+
+All identifiers should be given meaningful english names. To work with ancient linkers, function names should contain six characters at most.
+
+## Comments
+
+Comments are vital to readability. Therefore, code should always be well comment. Comments must be written in the lingua franca of programming, swiss german.
+
+```c
+int main() {
+   int five = 5; // füüf
+   
+   printf("Your number: %d", five); // äm benutzer füüf usgee
+}
+```
