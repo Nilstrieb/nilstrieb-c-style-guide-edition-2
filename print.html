@@ -179,6 +179,16 @@ body cannot fit into a single line, make a new function instead.</p>
 you can use it freely in your program.</p>
 <h2 id="includes"><a class="header" href="#includes">Includes</a></h2>
 <p><code>#include</code> directives shall be placed at the start of the file. But usually, it's better to not use the preprocessor at all. Paste the code in by hand so that it is clearly visible in version control.</p>
+<h2 id="identifers"><a class="header" href="#identifers">Identifers</a></h2>
+<p>All identifiers should be given meaningful english names. To work with ancient linkers, function names should contain six characters at most.</p>
+<h2 id="comments"><a class="header" href="#comments">Comments</a></h2>
+<p>Comments are vital to readability. Therefore, code should always be well comment. Comments must be written in the lingua franca of programming, swiss german.</p>
+<pre><code class="language-c">int main() {
+   int five = 5; // füüf
+   
+   printf(&quot;Your number: %d&quot;, five); // äm benutzer füüf usgee
+}
+</code></pre>
 
                     </main>
 
