@@ -12,14 +12,14 @@ body cannot fit into a single line, make a new function instead.
 ```c
    #include<stdio.h>
 
-   void foo_if_body() {
+   void if_bdy() {
       printf("Hello, ");
       printf("World!");
    }
    
    void foo() {
       if (true)
-         foo_if_body();
+         if_bdy();
       else
          printf("True was false!");
    }
