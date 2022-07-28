@@ -152,14 +152,14 @@ and therefore readability comes before writability.</p>
 body cannot fit into a single line, make a new function instead.</p>
 <pre><code class="language-c">   #include&lt;stdio.h&gt;
 
-   void foo_if_body() {
+   void if_bdy() {
       printf(&quot;Hello, &quot;);
       printf(&quot;World!&quot;);
    }
    
    void foo() {
       if (true)
-         foo_if_body();
+         if_bdy();
       else
          printf(&quot;True was false!&quot;);
    }
