@@ -27,7 +27,7 @@ body cannot fit into a single line, make a new function instead.
 
 ## Identation
 
-C code must be indented with 3 spaces. The toplevel should be indented as well.
+C code must be indented with 3 spaces. The top-level should be indented as well.
 
 ```c
    #include<stdio.h>
